@@ -1,0 +1,7 @@
+# ~/.ssh/config — автопідключення з тунелем: ssh -N sdr
+Host sdr
+    HostName localhost
+    User vladDos
+    IdentityFile ~/.ssh/id_ed25519
+    LocalForward 8888 127.0.0.1:8000
+    ServerAliveInterval 30
